@@ -1,0 +1,64 @@
+html{
+    background-color: #443D3D;
+}
+
+.signUp_container {
+    margin: 0;
+    padding: 0;
+    background-color: #443D3D;
+    color: #FF9C06;
+    font-family: 'Teko', sans-serif;
+    display: none;
+    grid-template-areas: 
+    "header"
+    "main";
+    
+}
+
+#header{
+    color: #FF9C06;
+    grid-area: header;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    margin-right: 25px;
+    
+    
+}
+
+input[type=text] {
+    background-color: #262420;
+    color: #FF9C06;
+    font-size: 24px;
+    height: 40px;
+    width: 300px;
+
+}
+
+input[type=submit] {
+    background-color: #FF9C06;
+    color: #262420;
+    height: 70px;
+    width: 150px;
+    font-size: 32px;
+
+        
+}
+
+@media (min-width: 500px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "   main";
+    }
+}
+

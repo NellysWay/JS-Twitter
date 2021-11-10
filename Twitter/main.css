@@ -1,0 +1,341 @@
+header{
+    font-family: 'Teko', sans-serif;
+    background-color: #242424;
+    color: #FF9C06;
+    
+    font-size: 45px;
+}
+
+
+.main_container {
+   
+    background-color: #443D3D;
+    font-family: 'Teko', sans-serif;
+    display: none;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "post"
+    "main"
+    "profile"
+    "explore"
+    "contacts"
+    "message"
+    "topics"
+    "settings";   
+    
+}
+
+#main-post{
+    grid-area: post;
+}
+#main-feed {
+    grid-area: main;
+    display: none;
+    flex-direction: column;
+    background-color: #443D3D;
+    border-right: 2px solid black;
+    color:grey;
+    
+    
+  
+  
+}
+.like-icon, .comment-icon {
+    display: inline-block;
+    margin: 0 0.5em;
+    
+}
+
+.card__footer {
+    color: #f5f5f5;
+    background-color: #FF9C06;
+margin-bottom: 20px;
+    display: flex;
+    padding: 0.5em;
+   
+}
+
+.post-btn-group {
+    border: none;
+    margin-left: auto;
+    padding: 0;
+}
+#header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+#profile{
+    grid-area: profile;
+    background-color: #443D3D;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    
+    grid-template-areas: 
+    "pic4 pro "
+    "pic4 follow"
+    "pic4 follow";
+
+    border-bottom: 2px solid black;
+    
+}
+.name{
+    padding: 0;
+    margin: 0;
+    word-spacing: 2px;
+    
+    
+
+}
+#pro{
+    grid-area: pro;
+}
+#follow{
+    grid-area: follow;
+}
+#pro_pic{
+    background-color: honeydew;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    grid-area: pic4;
+}
+
+#explore{
+    grid-area: explore;
+    background-color: #443D3D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 32px;
+    border-bottom: 2px solid black;
+    
+}
+a{
+    color: white;
+}
+.stats{
+    list-style-type: none;
+}
+
+#contacts{
+    grid-area: contacts;
+    background-color: #443D3D;
+    display: flex;
+    flex-direction: row;
+}
+.pic5 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.pic7 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}.pic8 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}.pic9 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}.pic10 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.pic11 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#message{
+    grid-area: message;
+   background-color: #443D3D;
+   
+}
+.pic12 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.pic13 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}.pic14 {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#topics{
+    grid-area: topics;
+    background-color: #443D3D;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: .2fr .1fr;
+    grid-template-rows: 1fr .5fr .5fr .5fr;
+    grid-template-areas:
+    "top top" 
+    "thold1 thold2"
+    "thold3 thold4"
+    "thold5 thold6";
+
+    
+}
+#top{
+    grid-area: top;
+    display: flex;
+    ;justify-content: center;
+}
+#thold1{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold1;
+
+}
+#thold2{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold2;
+
+}
+#thold3{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold3;
+
+}#thold4{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold4;
+
+}#thold5{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold5;
+
+}#thold6{
+    background-color: honeydew;
+    width: 100px;
+    height: 50px;
+    grid-area: thold6;
+
+}
+
+#settings{
+    grid-area: settings;
+    
+    background-color: #443D3D;
+}
+.info{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.post{
+    background-color: #242424;
+    
+    
+    display: flex;
+    flex-direction: row;   
+}
+
+
+.pic {
+    background-color: honeydew;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 17px;
+    margin-top: 15px;
+}
+.name{
+    margin-left: 30px;
+    font-size: larger;
+    color: darkorange;
+}
+
+.chat-body{
+    margin-top: 20px;
+    padding: .5em;
+}
+
+#post-text{
+    border: none;
+    background-color: none;
+}
+
+.main-post{
+    background-color: #242424;
+    height: 100px;
+    width: 325px;
+     
+    
+}
+
+
+
+
+#post-btn{
+    background-color: #FF9C06;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+@media (min-width: 500px){
+    .main_container{
+        grid-template-columns: 1fr  .5fr;
+        grid-template-rows: .1fr .2fr .3fr 1.2fr .3fr;
+        grid-template-areas:
+        "header    header" 
+        "profile  profile"
+        "main  message"
+        "explore  topics"
+        "contacts settings";
+    }
+}
+
+@media (min-width: 700px) {
+    .main_container{
+        grid-template-columns: 1fr .5fr 1fr;
+        grid-template-rows: .2fr .1fr .5fr .2fr;
+        grid-template-areas: 
+        "header header header"
+        "profile post message"
+        "explore main topics"
+        "contacts main settings";
+
+    }
+}
+
+
+
+
+
+
